@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{12345678-1234-1234-1234-123456789012}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SafwaManagementSystem.My.MyApplication</StartupObject>
+    <RootNamespace>SafwaManagementSystem</RootNamespace>
+    <AssemblyName>SafwaManagementSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SafwaManagementSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SafwaManagementSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Any CPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SafwaManagementSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Any CPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SafwaManagementSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\MainDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainDashboard.Designer.vb">
+      <DependentUpon>MainDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Students\StudentManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Students\StudentManagement.Designer.vb">
+      <DependentUpon>StudentManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Students\StudentAddEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Students\StudentAddEdit.Designer.vb">
+      <DependentUpon>StudentAddEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Teachers\TeacherManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teachers\TeacherManagement.Designer.vb">
+      <DependentUpon>TeacherManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Teachers\TeacherAddEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teachers\TeacherAddEdit.Designer.vb">
+      <DependentUpon>TeacherAddEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Teachers\TeacherSchedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teachers\TeacherSchedule.Designer.vb">
+      <DependentUpon>TeacherSchedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Groups\GroupManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Groups\GroupManagement.Designer.vb">
+      <DependentUpon>GroupManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Groups\GroupAddEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Groups\GroupAddEdit.Designer.vb">
+      <DependentUpon>GroupAddEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Groups\GroupEnrollments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Groups\GroupEnrollments.Designer.vb">
+      <DependentUpon>GroupEnrollments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Groups\GroupScheduleView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Groups\GroupScheduleView.Designer.vb">
+      <DependentUpon>GroupScheduleView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Attendance\AttendanceManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Attendance\AttendanceManagement.Designer.vb">
+      <DependentUpon>AttendanceManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Attendance\SessionCreate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Attendance\SessionCreate.Designer.vb">
+      <DependentUpon>SessionCreate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Attendance\AttendanceReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Attendance\AttendanceReport.Designer.vb">
+      <DependentUpon>AttendanceReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Attendance\AttendanceReportMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Attendance\AttendanceReportMain.Designer.vb">
+      <DependentUpon>AttendanceReportMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Payments\PaymentManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Payments\PaymentManagement.Designer.vb">
+      <DependentUpon>PaymentManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Payments\PaymentAddEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Payments\PaymentAddEdit.Designer.vb">
+      <DependentUpon>PaymentAddEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\ReportsMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\ReportsMain.Designer.vb">
+      <DependentUpon>ReportsMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\StudentReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\StudentReport.Designer.vb">
+      <DependentUpon>StudentReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\TeacherReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\TeacherReport.Designer.vb">
+      <DependentUpon>TeacherReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Exams\ExamManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Exams\ExamManagement.Designer.vb">
+      <DependentUpon>ExamManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Exams\ExamAddEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Exams\ExamAddEdit.Designer.vb">
+      <DependentUpon>ExamAddEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DatabaseManager.vb" />
+    <Compile Include="Models\Student.vb" />
+    <Compile Include="Models\Teacher.vb" />
+    <Compile Include="Models\Group.vb" />
+    <Compile Include="Models\Enrollment.vb" />
+    <Compile Include="Models\Session.vb" />
+    <Compile Include="Models\Attendance.vb" />
+    <Compile Include="Models\Payment.vb" />
+    <Compile Include="Models\Exam.vb" />
+    <Compile Include="Models\Grade.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\MainDashboard.resx">
+      <DependentUpon>MainDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Students\StudentManagement.resx">
+      <DependentUpon>StudentManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Students\StudentAddEdit.resx">
+      <DependentUpon>StudentAddEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teachers\TeacherManagement.resx">
+      <DependentUpon>TeacherManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teachers\TeacherAddEdit.resx">
+      <DependentUpon>TeacherAddEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teachers\TeacherSchedule.resx">
+      <DependentUpon>TeacherSchedule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Groups\GroupManagement.resx">
+      <DependentUpon>GroupManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Groups\GroupAddEdit.resx">
+      <DependentUpon>GroupAddEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Groups\GroupEnrollments.resx">
+      <DependentUpon>GroupEnrollments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Groups\GroupScheduleView.resx">
+      <DependentUpon>GroupScheduleView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Attendance\AttendanceManagement.resx">
+      <DependentUpon>AttendanceManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Attendance\SessionCreate.resx">
+      <DependentUpon>SessionCreate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Attendance\AttendanceReport.resx">
+      <DependentUpon>AttendanceReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Attendance\AttendanceReportMain.resx">
+      <DependentUpon>AttendanceReportMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Payments\PaymentManagement.resx">
+      <DependentUpon>PaymentManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Payments\PaymentAddEdit.resx">
+      <DependentUpon>PaymentAddEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\ReportsMain.resx">
+      <DependentUpon>ReportsMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\StudentReport.resx">
+      <DependentUpon>StudentReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\TeacherReport.resx">
+      <DependentUpon>TeacherReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
